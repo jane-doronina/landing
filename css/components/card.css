@@ -1,0 +1,83 @@
+/* CARD LEFT */
+
+.card-left {
+  display: flex;
+  height: 300px;
+  align-items: center;
+}
+
+.card-left img {
+  width: 30%;
+  margin-right: 5%;
+}
+
+.card-info h3, .card-info p {
+  margin: 0;
+}
+
+.card-info h3 {
+  color: rgb(45, 46, 64);
+  margin-bottom: 20px;
+}
+
+.card-info p {
+  color: rgb(80, 80, 80);
+}
+
+/* CARD RIGHT */
+.card-right {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 300px;
+  align-items: center;
+}
+
+.card-right img {
+  width: 30%
+}
+
+/* MEDIA QUERIES */
+
+
+@media(max-width: 760px) {
+  .card-left img {
+    height: auto;
+    width: 50%;
+    margin-bottom: 5%;
+  }
+  .card-right img {
+    height: auto;
+    width: 50%;
+    margin-bottom: 5%;
+  }
+}
+
+@media(max-width: 600px) {
+  .card-left {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+  .card-right {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+  .card-left img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .card-right img {
+    height: auto;
+    width: 100%;
+
+  }
+
+}

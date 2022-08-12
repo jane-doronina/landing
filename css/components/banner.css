@@ -1,0 +1,56 @@
+.container {
+  width: 60%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.banner {
+  background-image: linear-gradient(to bottom right, rgb(255, 141, 114), rgb(255, 66, 89));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+  border-bottom-left-radius: 150px;
+  padding: 200px 0;
+  position: relative;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 110%;
+  object-fit: cover;
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  top: -230px;
+  right: -100px;
+}
+
+.container p, .container h1 {
+  margin: 10px;
+}
+
+.banner .container p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: rgba(255,255,255,0.7)
+}
+
+.container h1 {
+  font-size: 2.5rem;
+}
+
+/* MEDIA QUARIES */
+
+@media(max-width: 1000px) {
+
+  .banner img {
+  width: 200%;
+}
+  .container {
+    width: 80%;
+  }
+}
